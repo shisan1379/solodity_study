@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/erc721/IERC721Receiver.sol": "IERC721Receiver"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/erc721/IERC721Receiver.sol": {
+			"keccak256": "0x0fcb9623094b50b32a121bd824d219a847dacdf7259ca612dc40ea80431fad4e",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://e8c4a92f3b4c5877257f87d090f6f97783d7d03f6975b99cfb2cbed673efbecc",
+				"dweb:/ipfs/QmeKWdkPoMBchYxJrkP8McczLSb1i9V4GrjNMfkhtDrytA"
+			]
+		}
+	},
+	"version": 1
+}

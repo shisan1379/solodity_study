@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multiTransferToken(address,address[],uint256[])": {
+					"params": {
+						"_addresses": "空投地址数组",
+						"_amounts": "代币数量数组（每个地址的空投数量）",
+						"_token": "转账的ERC20代币地址"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multiTransferETH(address[],uint256[])": {
+					"notice": "向多个地址转账ETH"
+				},
+				"multiTransferToken(address,address[],uint256[])": {
+					"notice": "向多个地址转账ERC20代币，使用前需要先授权"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/airdrop/airdrop.sol": "Airdrop"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/airdrop/airdrop.sol": {
+			"keccak256": "0x0a4485215f1a1f03f01cd9eb0ee25361e71cb0d625dea8d152c02caecd2575f2",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://0dd7ae96783f53c9b8aa39f6810cdeef004fb887ee0ddfddeb44661f82633262",
+				"dweb:/ipfs/QmZYvK4zU7VVLQNhVayxgVMmh4z6uBesSkM2mN2pAe1hg1"
+			]
+		},
+		"contracts/erc20/IERC20.sol": {
+			"keccak256": "0xf9a1a38dd84dca48ccb74c47f2c7939610aef1614b740c0d93b5d788b11ea986",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d24c4ef3d472151aa70d9959d42fd2db06b9519f21941248049c01928de25e14",
+				"dweb:/ipfs/QmPVJ1amsyUvmz7GiF9rkwUZCHTjSP2LGeij7YSFb3AcJv"
+			]
+		}
+	},
+	"version": 1
+}
