@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getMessageHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ecdsa/ecdsa.sol": "ecdsa"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ecdsa/ecdsa.sol": {
+			"keccak256": "0xa538620dd641b3e0ea448b144810a3bb5b6a424e993434540be3c8bccba6dee8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ec86b667c197f20bd30f31ca52f30f806ae471bd91f6962406d1d4312829eff8",
+				"dweb:/ipfs/QmaYncpXAZxueEKE2cfknZDBcWrZKXezTF7B56yzxHPVdL"
+			]
+		}
+	},
+	"version": 1
+}

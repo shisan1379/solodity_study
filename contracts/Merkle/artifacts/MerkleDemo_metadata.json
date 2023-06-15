@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Merkle/MerkleProof.sol": "MerkleDemo"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Merkle/MerkleProof.sol": {
+			"keccak256": "0xa63e26eebfac44e809cb7d152771ea6c1d0ceb2f5578f37946b012bcb78a66c2",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://76254bde3b2df1561634067292899c795d255bfaaf95eaf2d38197b1486893b0",
+				"dweb:/ipfs/QmZrCu6ZJRLa1RwXTKQv8fBDmEkZzkkULpnagFGRePtLo9"
+			]
+		}
+	},
+	"version": 1
+}

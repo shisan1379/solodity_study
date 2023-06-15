@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getRandomOnchain",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getRandomOnchain()": {
+					"notice": "链上伪随机数生成 利用keccak256()打包一些链上的全局变量/自定义变量 返回时转换成uint256类型"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Random/RandomDemo.sol": "randomDemo"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Random/RandomDemo.sol": {
+			"keccak256": "0x508b700f67245271ef9fd5e056336ae72608b1c489277e131df47cd49ffd7edb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef474ddba87351ca7b63d691f1cc365cfd43b6b87b4a4e85eea691c4f377db18",
+				"dweb:/ipfs/QmSYWqGozvFD3jmKkQVvEZ8MvSM4Xb9djREbtXH23QDDN3"
+			]
+		}
+	},
+	"version": 1
+}

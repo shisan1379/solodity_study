@@ -1,0 +1,519 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "merkleroot",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32[]",
+						"name": "proof",
+						"type": "bytes32[]"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "mintedAddress",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "root",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"notice": "实现IERC721的safeTransferFrom，安全转账，调用了_safeTransfer函数。"
+				},
+				"tokenURI(uint256)": {
+					"notice": "实现IERC721Metadata的tokenURI函数，查询metadata。"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Merkle/MerkleProof.sol": "MerkleTree"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Merkle/MerkleProof.sol": {
+			"keccak256": "0x474ca253c2bd1ce497f1754c316a4067c3f39ac4f939865345f9c15153cbf207",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://1caea3bb6704b96839a730a804beac09e393def5348de437665eae5a218416b8",
+				"dweb:/ipfs/QmQd2fBw1XA8TJRbBcUjJP9Jvacr9dbQ97KQovbUyNi1Z7"
+			]
+		},
+		"contracts/erc721/Address.sol": {
+			"keccak256": "0x8902e367c503bda9ff7d9232e3f3c0818c385499154fb317a00fcddfc4ca1f32",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42057627d56339375822bc1a72a4f1d4c03e4becd657a039d96ced3edbc86b4f",
+				"dweb:/ipfs/QmVF2Nu9SB1zEpuffG6sjfyGeFDP5rVfBBABxiSH5rFTWc"
+			]
+		},
+		"contracts/erc721/ERC721.sol": {
+			"keccak256": "0x3a53054f7349b4f6c24b103eaec4fa1d772e8d7d1bae7a97eb30f7c17c6319f9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01f0623fcab36023069b62b2f059ccf82e2416b06f0ef6de7f73255933155c8e",
+				"dweb:/ipfs/QmUQu5wTGy6UdtQF6KkacR5DftYmTCWePa4cV1yq1Z5Wg1"
+			]
+		},
+		"contracts/erc721/IERC165.sol": {
+			"keccak256": "0xdc57a60642abc5b96b18e76053a251d61a24d65a451b90a4538d5d4f464a0774",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://ce4b0b4058e28294fec5569cffd0ab20c9ae38f559894b375a1ad4eab8cf175c",
+				"dweb:/ipfs/Qmf5MCtFgT3qJNciEvZpBkaHEALx13TBvasX863E6EkAjH"
+			]
+		},
+		"contracts/erc721/IERC721.sol": {
+			"keccak256": "0x0f655e6df89b702df105672c97b8675d63a6110af4d63c50fbef45be7399a7dc",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://7b965a57121b538aea31c32f08cf1a327a89b2b588f6bacdcbabad8f60fd0450",
+				"dweb:/ipfs/QmRGd3uX1NwcnzAgMiHRLcoqdS2ZvKpQT4Rzo8AKgLwHz7"
+			]
+		},
+		"contracts/erc721/IERC721Metadata.sol": {
+			"keccak256": "0x1fd13b125e298651196b564a452c91273912c39eb859fb80c75c30ba87afaef7",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://6bf2b62a515c2c1c74565f063e896d5fe14c0a11ed89b577798d0155236f60eb",
+				"dweb:/ipfs/QmUCACopPwzBaNn27L5d5UNkJptsX45ssFTGtaVAEp8HTy"
+			]
+		},
+		"contracts/erc721/IERC721Receiver.sol": {
+			"keccak256": "0x0fcb9623094b50b32a121bd824d219a847dacdf7259ca612dc40ea80431fad4e",
+			"license": "MIt",
+			"urls": [
+				"bzz-raw://e8c4a92f3b4c5877257f87d090f6f97783d7d03f6975b99cfb2cbed673efbecc",
+				"dweb:/ipfs/QmeKWdkPoMBchYxJrkP8McczLSb1i9V4GrjNMfkhtDrytA"
+			]
+		},
+		"contracts/erc721/String.sol": {
+			"keccak256": "0x5535656efea1b2c41a7789a571f503c2edf707a6df77d501ef8f9a7124d0c4df",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1fac1a4a817c921513ebc504b8b25126ec911765f49d304f9c49dfa3864cc9c2",
+				"dweb:/ipfs/QmXhguUqN6oWE7FTvrg1YNbtWGh3KT7kiisAHYkwyzzLMX"
+			]
+		}
+	},
+	"version": 1
+}
